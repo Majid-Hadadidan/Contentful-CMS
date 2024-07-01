@@ -4,7 +4,7 @@ import { createClient } from "contentful";
 const client = createClient({
   space: "qji7jyilfkxz",
   environment: "master",
-  accessToken: "gAnkRi41pzZ3oGd6fy4X-tJJXznAU2Rjvp5ZqTtuIT0",
+  accessToken: import.meta.env.VITE_API_KEY,
 });
 
 export const useFetchProjects = () => {
